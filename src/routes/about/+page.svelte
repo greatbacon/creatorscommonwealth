@@ -6,17 +6,20 @@
     <!-- <img class="image" src={image} alt="Courtney with her dog Yarrow, in front of a lake."/> -->
     <div class="text">
         <p>
-            Achillea Studios is the creative project of Courtney Allen. Courtney is based in Denver, where she lives with her partner <a href="https://12mod12.com">Hamilton</a>, her dog Yarrow and her cat Brinkley. 
-            She is currently working on her masters in counseling and spends the rest of her time 
-            in her sewing room, at the ceramic studio, on trails with Yarrow or catching up with friends and family.
+            Creators Commonwealth is a creative collective founded in sunny Denver, Colorado that is experimenting with how we fund and build our culture.
         </p>
 
         <p>
-            Courtney has always been drawn to creative projects and pursuits, and got into sewing clothes during the pandemic. 
-            When friends started having babies, she figured it was a good time to learn how to quilt. 
-            When she was laid off from her tech job in May of 2024, she found herself with so much more time to tackle creative projects. 
-            Today, Courtney finds the process of cutting, piecing and sewing quilt blocks extremely meditative, 
-            and the act of creating something bold and bright for a friend or loved one to be a true gift of love and labor. 
+            The collective is structured on a <a href="https://12mod12.com/blog/2">peer production</a> model that balances compensation between those who design
+            and kickstart new things with those responsible for the actual manufacturing and fabrication of things.             
+        </p>
+        <p>
+            The goal ultimately being to prevent the eternal IP monopolies
+            that have formed in the early 21st century and to ensure the profits go to
+            the people actually making the things we buy. Oh, and make some cool shit along the way.
+        </p>
+        <p>
+            Learn more about the collective's structure in detail <a href="/structure">here</a>
         </p>
     </div>	
 </div>

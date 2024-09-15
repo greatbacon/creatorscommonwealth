@@ -1,12 +1,10 @@
 <script>	
-	// import bandana from '$lib/images/dog_bandanas.jpg'
-	// import quilt from '$lib/images/quilt.jpg'
-	// import clothes from '$lib/images/upcycled_clothes.jpg'
+	 import games from '$lib/images/games.jpg'	
 </script>
 
 <div class="offerings">	
-	<a class="tile" href="/">
-		<!-- <img class="image" src={quilt} alt="a quilt drapped over a fence" /> -->
+	<a class="tile" href="/games">
+		<img class="image" src={games} alt="a quilt drapped over a fence" />
 		<div>
 			GAMES
 		</div>
