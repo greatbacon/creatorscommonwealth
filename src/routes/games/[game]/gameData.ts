@@ -19,25 +19,25 @@ export type PriceSheet = {
 export const games: Game[] = [{
     name: "aquisition",
     images: [],
-    description: "Lorem Ipsum",
+    description: "Lorem Ipsum Description",
     priceSheet: [{
         priceInCents: 500,
         productName: 'pattern',
-        productDescription: 'Lorem Ipsum',
+        productDescription: 'Lorem Ipsum Pattern',
         creatorName: 'Creators Commonwealth',
         creatorTitle: 'designer',
         creatorVerb: 'designed',
     },{
         priceInCents: 2000,
         productName: 'kit',
-        productDescription: 'Lorem Ipsum',
+        productDescription: 'Lorem Ipsum Kit',
         creatorName: 'Creators Commonwealth',
         creatorTitle: 'fabricator',
         creatorVerb: 'fabricated'
     }, {
         priceInCents: 10000,
         productName: 'full game',
-        productDescription: 'Lorem Ipsum',
+        productDescription: 'Lorem Ipsum Full Game',
         creatorName: 'Creators Commonwealth',
         creatorTitle: 'assembler',
         creatorVerb: 'assembled'

@@ -1,4 +1,7 @@
 <script lang="ts">
+//TODO this is a copypasta component from another project
+//please add a "toolbox" or "commons" to the loom project & upstream them 
+
     import {fade} from 'svelte/transition';
     import type {Image} from '$lib/imageGallery';
     
@@ -19,12 +22,14 @@
     }
 </script>
 
-<div class="gallery"> 
-    <button class="btn" on:click={() => prevImage()}>&lt;</button>
-    {#key item}
-        <img class="image" in:fade|local={{duration: 400}} src={item.url} alt={item.description}/>
-    {/key}                    
-    <button class="btn" on:click={() => nextImage()}>&gt;</button>        
+<div class="gallery">
+    {#if item} 
+        <button class="btn" on:click={() => prevImage()}>&lt;</button>
+        {#key item}
+            <img class="image" in:fade|local={{duration: 400}} src={item.url} alt={item.description}/>
+        {/key}                    
+        <button class="btn" on:click={() => nextImage()}>&gt;</button>        
+    {/if}
 </div>
 
 <style>
