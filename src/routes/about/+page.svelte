@@ -3,7 +3,7 @@
 </script>
 
 <div class="content">
-    <!-- <img class="image" src={image} alt="Courtney with her dog Yarrow, in front of a lake."/> -->
+    <!-- <img class="image" src={image} alt="The skyline of Denver as seen from the southwest."/> -->
     <div class="text">
         <p>
             Creators Commonwealth is a creative collective founded in sunny Denver, Colorado that is experimenting with how we fund and build our culture.

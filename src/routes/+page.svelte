@@ -1,15 +1,11 @@
 <script>	
-	 import games from '$lib/images/games.jpg'	
+	 import games from '$lib/images/games.jpg';
+	 import Card from './Card.svelte';
 </script>
 
-<div class="offerings">	
-	<a class="tile" href="/games">
-		<img class="image" src={games} alt="a quilt drapped over a fence" />
-		<div>
-			GAMES
-		</div>
-	</a>
-	<!-- <a class="tile" href="/">
+<div class="offerings">
+	<Card imageSrc={games} url="/games" altText="a lasercut wooden box with the word aquisition on the lid opened to reveal contents" displayText="GAMES" />	
+	<!-- <a class="tile" href="/"displayText="GAMES">
 		<img class="image" src={quilt} alt="a quilt drapped over a fence" />
 		<div>
 			WALL ART
@@ -24,19 +20,5 @@
 		justify-content: center;		
 		height: 50%;
 		flex-wrap: wrap;
-	}
-
-	.tile {
-		padding-top: 1rem;
-		margin: 0.25em;
-		text-align: center;
-		height: 18rem;
-		width: 15rem;
-		border : 2px solid black;
-		border-radius: 25px;
-	}
-
-	.image {
-		width: 10rem;
 	}
 </style>
