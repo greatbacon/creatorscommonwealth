@@ -15,7 +15,23 @@
         {data.description}
     </div>
     <div class="prices">
-        <!-- put a table here that iterates on the data.priceSheet-->
+        <table class="table">
+            <tr>
+                <td>Product Tier</td>
+                <td>Price</td>
+                <td>Creator</td>
+                <td>Description</td>
+            </tr>
+            {#each data.priceSheet as entry }
+            <tr>
+                <td>{entry.productName}</td>
+                <td>{entry.priceInCents}</td>
+                <td>{entry.creatorVerb} by {entry.creatorName}</td>
+                <td>{entry.productDescription}</td>
+            </tr>
+            {/each}
+            
+        </table>
     </div>	
 </main>
 
@@ -26,6 +42,12 @@
 
     .details {
         text-align: center;
+    }
+
+    
+
+    table, th, td {        
+        border: 1px solid;
     }
 
 </style>
