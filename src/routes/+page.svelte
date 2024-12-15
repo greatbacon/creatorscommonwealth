@@ -4,7 +4,7 @@
 </script>
 
 <div class="offerings">
-	<Card imageSrc={games} url="/games" altText="a lasercut wooden box with the word aquisition on the lid opened to reveal contents" displayText="GAMES" />	
+	<Card icon="♟️" url="/games" altText="a lasercut wooden box with the word aquisition on the lid opened to reveal contents" displayText="GAMES" />		
 	<!-- <a class="tile" href="/"displayText="GAMES">
 		<img class="image" src={quilt} alt="a quilt drapped over a fence" />
 		<div>

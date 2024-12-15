@@ -19,7 +19,7 @@
             the people actually making the things we buy. Oh, and make some cool shit along the way.
         </p>
         <p>
-            Learn more about the collective's structure in detail <a href="/structure">here</a>
+            Learn more about the collective's structure in detail <a href="/about/structure">here</a>
         </p>
     </div>	
 </div>
