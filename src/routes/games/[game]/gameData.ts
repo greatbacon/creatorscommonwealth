@@ -1,8 +1,12 @@
 import type {Image} from '$lib/imageGallery';
+import aqui1 from '$lib/images/aquisition/aquisition1.jpg';
 
 export type Game = {
     name: string;
     images: Image[];
+    players: string;
+    age: string;
+    playtime: string;
     description: string;
     priceSheet: PriceSheet[]
 }
@@ -18,26 +22,32 @@ export type PriceSheet = {
 
 export const games: Game[] = [{
     name: "aquisition",
-    images: [],
-    description: "Lorem Ipsum Description",
+    players: "2-6",
+    age: "8+",
+    playtime: "1hr",
+    images: [{
+        url: aqui1,
+        description: "A wooden box with the name Aquisition engraved on its lid, open to reveal game components"
+    }],
+    description: "Aquisition is a game about building an empire out of small companies. Each player takes turn placing tiles in an effort to found, expand, and merge various companies all while buying up stocks and making some money in the aquisition process. The player with the most money at the end wins. An average game takes about 1 hour.",
     priceSheet: [{
         priceInCents: 500,
         productName: 'pattern',
-        productDescription: 'Lorem Ipsum Pattern',
+        productDescription: 'Designed in-house by Creators Commonwealth, the pattern consists of finished Lightburn files for cutting out a board+tiles as well as a box. It also includes print ready PDFs for money, stock cards, cheat sheets, and an instruction 1 pager, plus the Nandeck script used to generate the money & stock cards.',
         creatorName: 'Creators Commonwealth',
         creatorTitle: 'designer',
         creatorVerb: 'designed',
     },{
-        priceInCents: 2000,
+        priceInCents: 2500,
         productName: 'kit',
-        productDescription: 'Lorem Ipsum Kit',
+        productDescription: 'Kits are fabricated in-house by Creators Commonwealth. They include 5 perforated, 12in x 12in x 1/8in birch plywood boards that can be assembled into the board and box, as well as all paper printed materials. Stocks, money, and cheat sheets will still need to be cut with scissors as well.',
         creatorName: 'Creators Commonwealth',
         creatorTitle: 'fabricator',
         creatorVerb: 'fabricated'
     }, {
         priceInCents: 10000,
         productName: 'full game',
-        productDescription: 'Lorem Ipsum Full Game',
+        productDescription: 'A fully assembled copy ready for gifting or gaming. Finished wood, assembled board & box, pre-cut cards, plus a bag for tiles & 6 tile holders',
         creatorName: 'Creators Commonwealth',
         creatorTitle: 'assembler',
         creatorVerb: 'assembled'

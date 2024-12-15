@@ -1,5 +1,5 @@
 <script>	
-    import games from '$lib/images/games.jpg';
+    import games from '$lib/images/aquisition/aquisition1.jpg';
     import Card from '../Card.svelte';
 </script>
 
