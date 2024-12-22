@@ -7,17 +7,18 @@ export type Game = {
     players: string;
     age: string;
     playtime: string;
-    description: string;
+    description: string;    
     priceSheet: PriceSheet[]
 }
 
 export type PriceSheet = {
+    purchaseLink: string;
     priceInCents: number;
     productName: string;
     productDescription: string;
     creatorTitle: string;
     creatorVerb: string;
-    creatorName: string;
+    creatorName: string;    
 }
 
 export const games: Game[] = [{
@@ -31,6 +32,7 @@ export const games: Game[] = [{
     }],
     description: "Aquisition is a game about building an empire out of small companies. Each player takes turn placing tiles in an effort to found, expand, and merge various companies all while buying up stocks and making some money in the aquisition process. The player with the most money at the end wins. An average game takes about 1 hour.",
     priceSheet: [{
+        purchaseLink: 'email admin',
         priceInCents: 500,
         productName: 'pattern',
         productDescription: 'Designed in-house by Creators Commonwealth, the pattern consists of finished Lightburn files for cutting out a board+tiles as well as a box. It also includes print ready PDFs for money, stock cards, cheat sheets, and an instruction 1 pager, plus the Nandeck script used to generate the money & stock cards.',
@@ -38,13 +40,15 @@ export const games: Game[] = [{
         creatorTitle: 'designer',
         creatorVerb: 'designed',
     },{
+        purchaseLink: 'email admin',
         priceInCents: 2500,
         productName: 'kit',
-        productDescription: 'Kits are fabricated in-house by Creators Commonwealth. They include 5 perforated, 12in x 12in x 1/8in birch plywood boards that can be assembled into the board and box, as well as all paper printed materials. Stocks, money, and cheat sheets will still need to be cut with scissors as well.',
+        productDescription: 'Kits are fabricated in-house by Creators Commonwealth. They include 5 perforated, 12in x 12in x 1/8in birch plywood boards that can be assembled into the board and box, as well as all paper printed materials. Stocks, money, and cheat sheets will still need to be cut with scissors as well. Glue for assembly not included.',
         creatorName: 'Creators Commonwealth',
         creatorTitle: 'fabricator',
         creatorVerb: 'fabricated'
     }, {
+        purchaseLink: 'email admin',
         priceInCents: 10000,
         productName: 'full game',
         productDescription: 'A fully assembled copy ready for gifting or gaming. Finished wood, assembled board & box, pre-cut cards, plus a bag for tiles & 6 tile holders',

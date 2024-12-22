@@ -17,6 +17,7 @@
     <div class="prices">
         <table class="table">
             <tr>
+                <td>Purchase</td>
                 <td>Product Tier</td>
                 <td>Price</td>
                 <td>Creator</td>
@@ -24,6 +25,7 @@
             </tr>
             {#each data.priceSheet as entry }
             <tr>
+                <td>{entry.purchaseLink}</td>
                 <td>{entry.productName}</td>
                 <td>{entry.priceInCents}</td>
                 <td>{entry.creatorVerb} by {entry.creatorName}</td>
@@ -46,7 +48,7 @@
 
     
 
-    table, th, td {        
+    table, td {        
         border: 1px solid;
     }
 
