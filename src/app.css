@@ -18,3 +18,10 @@
     font-weight: 500;    
     src: url('/fonts/Biryani.ttf') format('truetype'),        
 }
+
+@font-face {
+    font-family: 'Nickodemus-Extremus';
+    font-style: normal;
+    font-weight: 500;    
+    src: url('/fonts/Nickodemus-Extremus.ttf') format('truetype'),        
+}
