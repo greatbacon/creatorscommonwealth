@@ -1,5 +1,5 @@
 <script>
-    import logo from '$lib/images/creators_commonwealth_logo.svg'
+    import logo from '$lib/images/creators_commonwealth_logo_portable.svg'
 </script>
 
 
@@ -16,7 +16,7 @@
     .header {
         align-content: center;
         text-align: center;
-        font-family: TenorSans;
+        font-family: Nickodemus-Extremus;
     }
 
     img {
