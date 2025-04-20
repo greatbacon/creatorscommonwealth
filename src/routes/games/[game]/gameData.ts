@@ -1,5 +1,14 @@
 import type {Image} from '$lib/imageGallery';
-import aqui1 from '$lib/images/acquisition/acquisition1.jpg';
+import aqui1 from '$lib/images/acquisition/acquisition1.png';
+import aqui2 from '$lib/images/acquisition/acquisition2.jpg';
+import aqui3 from '$lib/images/acquisition/acquisition3.jpg';
+import aqui4 from '$lib/images/acquisition/acquisition4.jpg';
+import aqui5 from '$lib/images/acquisition/acquisition5.png';
+import aqui6 from '$lib/images/acquisition/acquisition6.jpg';
+import aqui7 from '$lib/images/acquisition/acquisition7.jpg';
+import aqui8 from '$lib/images/acquisition/acquisition8.jpg';
+import aqui9 from '$lib/images/acquisition/acquisition9.png';
+import aqui10 from '$lib/images/acquisition/acquisition10.png';
 
 export type Game = {
     name: string;
@@ -29,10 +38,45 @@ export const games: Game[] = [{
     players: "2-6",
     age: "8+",
     playtime: "1hr",
-    images: [{
+    images: [
+        {
         url: aqui1,
         description: "A wooden box with the name Acquisition engraved on its lid, open to reveal game components"
-    }],
+        },
+                {
+        url: aqui2,
+        description: "Uncut printed stocks for the game Acquisition"
+        },
+        {
+            url: aqui3,
+            description: "Uncut printed sheets of play money."
+            },
+            {
+                url: aqui4,
+                description: "Plywood boards with components of Acquisition cut into them, waiting to be removed for assembly."
+                },
+        {
+        url: aqui5,
+        description: "A wooden box with the name Acquisition engraved on its lid."
+        },
+        {
+            url: aqui6,
+            description: "Cut out playing tiles for the game Acquisition."
+            },
+            {
+                url: aqui7,
+                description: "4 different colors of play money, cut out as individual pieces"
+                },        
+            {url: aqui8,
+                description: "3 cut out stock cards for Red Rocks, Meow Wolf, and Elitch Garden"
+            },
+            {url: aqui9,
+                description: "A screenshot of the acquisition board lasercutting file."
+            },
+            {url: aqui10,
+                description: "A screenshot of a pdf of one of the acquisition stocks"
+            }
+],
     description: "Acquisition is a game about building an empire out of small companies. Each player takes turn placing tiles in an effort to found, expand, and merge various companies all while buying up stocks and making some money in the acquisition process. The player with the most money at the end wins. An average game takes about 1 hour.",
     priceSheet: [{
         purchaseLink: 'email admin',
