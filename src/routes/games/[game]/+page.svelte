@@ -3,7 +3,9 @@
 	
 	export let data: PageData;
 
-	import ImageGallery from '$lib/ImageGallery.svelte';    
+	import ImageGallery from '$lib/ImageGallery.svelte';
+    
+    const formatter = new Intl.NumberFormat('en-US', {style: 'currency',currency: 'USD',});
 </script>
 
 <main class="content">
@@ -25,9 +27,17 @@
             </tr>
             {#each data.priceSheet as entry }
             <tr>
+                {#if entry.outOfStock}
+                <td>Out of Stock</td>
+                {:else}
                 <td>{entry.purchaseLink}</td>
+                {/if}                
                 <td>{entry.productName}</td>
-                <td>{entry.priceInCents}</td>
+                {#if entry.payWhatYouWant}
+                    <td>Pay what you want (sug {formatter.format(entry.priceDollar)})</td>
+                {:else}
+                    <td>{formatter.format(entry.priceDollar)}</td>
+                {/if}                
                 <td>{entry.creatorVerb} by {entry.creatorName}</td>
                 <td>{entry.productDescription}</td>
             </tr>
@@ -39,14 +49,12 @@
 
 <style>
     .content {        
-        font-size: 2rem;        
+        font-size: 1.2rem;        
     }
 
     .details {
         text-align: center;
     }
-
-    
 
     table, td {        
         border: 1px solid;

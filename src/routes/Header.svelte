@@ -19,7 +19,8 @@
         font-family: Nickodemus-Extremus;
     }
 
-    img {
-        height: 3.1em;
+    h1 {
+        margin: 0;
     }
+
 </style>

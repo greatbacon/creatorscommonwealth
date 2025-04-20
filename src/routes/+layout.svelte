@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<a href="/about">ABOUT</a> <a href="/contact">CONTACT</a>
+		<a href="/about">ABOUT</a> <a href="/games">GAMES</a> <a href="/contact">CONTACT</a>
 	</footer>
 </div>
 
@@ -26,9 +26,11 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		padding-bottom: 1rem;
 		width: 100%;
-		max-width: 64rem;
+		max-width: 72rem;
 		margin: 0 auto;
 		box-sizing: border-box;
 		font-family: Forum;
